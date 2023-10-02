@@ -4,12 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dropdown profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   
   <div class="hero">
-    salut
+    <nav>
+      <img src="images/logo3.png" class="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="image-container">
+        <img
+          src="https://randomuser.me/api/portraits/med/women/63.jpg"
+          class="user-pic"
+          onclick="toggleMenu()"
+          >
+      </div>
+
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/med/women/63.jpg">
+            <h2>James Al</h2>
+          </div>
+
+          <hr>
+
+          <a href="#" class="sub-menu-link">
+            <i class="fa-regular fa-user fa-beat"></i>
+            <p>Edit Profile</p>
+            <span>></span></span>
+          </a>
+
+          <a href="#" class="sub-menu-link">
+            <i class="fa-solid fa-ellipsis"></i>
+            <p>Setting</p>
+            <span>></span></span>
+          </a>
+
+          <a href="#" class="sub-menu-link">
+            <i class="fa-solid fa-question"></i>
+            <p>Help & Support</p>
+            <span>></span></span>
+          </a>
+
+          <a href="#" class="sub-menu-link">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <p>Logout</p>
+            <span>></span></span>
+          </a>
+
+        </div>
+      </div>
+
+    </nav>
+
+    <div class="page">
+      <div class="contenu">
+        <h1>Drop Menu avec Javascript</h1>
+        <p>quand on clique sur l'image un menu s'ouvre!</p>
+        <p>quand on clique sur la page le menu se ferme!</p>
+      </div>
+    </div>
   </div>
 
   <script src="main.js"></script>
